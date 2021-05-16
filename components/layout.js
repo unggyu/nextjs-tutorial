@@ -25,7 +25,6 @@ export default function Layout({ children, home }) {
                 {home ? (
                     <>
                         <img
-                            priority
                             src={`${process.env.BACKEND_URL}/images/profile.jpg`}
                             className={utilStyles.borderCircle}
                             height={114}
@@ -41,10 +40,9 @@ export default function Layout({ children, home }) {
                     </>
                 ) : (
                     <>
-                        <Link href="/" as={`${process.env.BACKEND_URL}/`}>
+                        <Link href="/">
                             <a>
                                 <img
-                                    priority
                                     src={`${process.env.BACKEND_URL}/images/profile.jpg`}
                                     className={utilStyles.borderCircle}
                                     height={108}
